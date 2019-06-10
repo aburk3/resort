@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Error() {
-  return <div>Hellow from Error page</div>;
+  return <div>Hello from Error page</div>;
 }
