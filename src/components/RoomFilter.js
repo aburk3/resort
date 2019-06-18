@@ -36,6 +36,15 @@ export default function RoomFilter({ rooms }) {
     );
   });
 
+  let people = getUnique(rooms, "capacity");
+  people = people.map((item, index) => {
+    return (
+      <option key={index} value={item}>
+        {item}
+      </option>
+    );
+  });
+
   return (
     <section className="filter-container">
       <Title title="search rooms" />
@@ -64,7 +73,7 @@ export default function RoomFilter({ rooms }) {
             className="form-control"
             onChange={handleChange}
           >
-            {types}
+            {people}
           </select>
         </div>
         {/* end guests */}
