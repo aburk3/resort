@@ -30,7 +30,7 @@ class RoomProvider extends Component {
       rooms,
       featuredRooms,
       sortedRooms: rooms,
-      loading: true,
+      loading: false,
       price: maxPrice,
       maxPrice,
       maxSize
